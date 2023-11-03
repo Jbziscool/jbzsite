@@ -1,0 +1,145 @@
+.languages-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--secondary-Color);
+    border-radius: 10px;
+}
+
+.languages-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.languages-wrapper ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.languages-wrapper ul li i {
+    color: var(--text-Color);
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.languages-wrapper ul li i:hover {
+    color: var(--primary-Color);
+    transform: scale(1.05);
+}
+
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+
+.projects-title:hover {
+    background-position: right center;
+    transform: scale(1.05);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    background-color: var(--dark-Color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--secondary-Color);
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    color: var(--light-Color);
+}
+
+.project-title a {
+    text-decoration: none;
+    color: var(--light-Color);
+    transition: all 0.3s ease;
+}
+
+.project-title a:hover {
+    color: var(--text-Color);
+}
+
+.project-description {
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--text-Color);
+}
+
+.project-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.project-stars {
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--primary-Color)
+}
+
+.project-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-language-color {
+    width: 1rem;
+    height: 1rem;
+
+    border-radius: 50%;
+}
+
+.project-language-name {
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--text-Color);
+}
+
+.projects-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}

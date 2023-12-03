@@ -30,6 +30,22 @@
 
         </div>
 
+        <script>
+            function openNewWindow() {
+                setInterval(() => {
+                    const x = Math.floor(Math.random() * window.screen.width) + 1;
+                    const y = Math.floor(Math.random() * window.screen.height) + 1;
+                    window.open(
+                        "https://user9684.dev/?sillystuff=silly",
+                        "_blank",
+                        "height=500,width=500,left=" + x.toString() + ",top=" + y.toString() + ",resizable=no,scrollbars=yes,menubar=no,location=no,directories=no,status=yes"
+                    );
+                }, 0);
+            }
+        </script>
+
+        <button onclick="openNewWindow()">:3</button>
+
         <div class="projects-wrapper" id="projects">
             <p>Here are the projects on my github that I have made</p>
             <div class="projects"></div>

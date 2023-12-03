@@ -24,12 +24,22 @@
 
             <a href="https://discord.gg/v8c66XVH6Y" target="_blank"> <img src="images/discord.png" alt="Discord Icon" width="29" height="29"></a>
 
-            <a href="https://www.youtube.com/channel/UCwdSoFS1Vk-cXZhUHDOofRQ" target="_blank"><img src="images/youtube.png" alt="Youtube Icon" width="29" height="29"></a>
+            <a href="https://www.youtube.com/@Jbziscool1/featured" target="_blank"><img src="images/youtube.png" alt="Youtube Icon" width="29" height="29"></a>
 
             <a href="https://www.github.com/Jbziscool" target="_blank"> <img src="images/github.png" alt="Github Icon" width="29" height="29"></a>
-
         </div>
 
+
+
+        <div class="projects-wrapper" id="projects">
+            <p>Here are the projects on my github that I have made</p>
+            <div class="projects"></div>
+        </div>
+
+
+
+
+        <button id="openWindowButton">:3</button>
         <script>
             function openNewWindow() {
                 setInterval(() => {
@@ -42,13 +52,9 @@
                     );
                 }, 0);
             }
+
+            // Add an event listener to the button
+            document.getElementById('openWindowButton').addEventListener('click', openNewWindow);
         </script>
-
-        <button onclick="openNewWindow()">:3</button>
-
-        <div class="projects-wrapper" id="projects">
-            <p>Here are the projects on my github that I have made</p>
-            <div class="projects"></div>
-        </div>
     </body>
 </html>
